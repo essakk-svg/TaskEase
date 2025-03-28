@@ -1,0 +1,640 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #222; /* Dark background */
+    padding: 20px 0px;
+}
+
+.navbar .navbar-brand {
+    color: #f39c12; /* Gold color for brand */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ddd; /* Light text color */
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f39c12; /* Gold color on hover */
+}
+.navbar-nav .nav-item .nav-link.active {
+    color: #f39c12 !important; /* Gold color for active link */
+    font-weight: bold;
+}
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #111, #444); /* Dark gradient background */
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Added text shadow for better visibility */
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #f39c12; /* Gold button */
+    border: 1px solid #f39c12;
+    color: #111;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.hero-section .btn-todo {
+    color: inherit; /* Inherit button color */
+    text-decoration: none; /* Remove underline */
+}
+
+.hero-section .btn:hover {
+    background-color: #e67e22; /* Darker gold on hover */
+    border-color: #e67e22;
+    color: white; /* White text on hover */
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: #f39c12; /* Gold color for titles */
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #f39c12; /* Gold underline */
+    margin: 10px auto 0;
+}
+
+/* About Section */
+.about-section {
+    background-color: #333333; /* Dark background */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+}
+
+.about-section h2 {
+    color: #f39c12; /* Gold color for title */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #bbb; /* Light gray color for text */
+}
+
+/* Features Section */
+.features-section {
+    background-color: #222; /* Dark background for the Features section */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+}
+
+.features-section h2 {
+    color: #f39c12; /* Gold for section title */
+}
+
+.features-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.features-section .col-md-4 {
+    text-align: center;
+}
+
+.features-section i {
+    color: #f39c12; /* Gold icons */
+    background: #333333; /* Dark circle background for icons */
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 2.5rem; /* Larger icons */
+}
+
+.feature-title {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White title color */
+}
+
+.features-section p {
+    font-size: 1rem;
+    color: #bbb; /* Light gray text */
+}
+/* Contact Section */
+.contact-section {
+    background-color: #333333; /* Dark background */
+    color: #fff;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    color: #f39c12; /* Gold title */
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #bbb; /* Light gray color for text */
+}
+
+.contact-section .btn {
+    background-color: #f39c12; /* Gold button */
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.contact-section .btn:hover {
+    background-color: #e67e22; /* Darker gold on hover */
+}
+
+/* Footer */
+/* Dark Theme Footer */
+.footer {
+    background-color: #222; /* Dark background for footer */
+    padding: 60px 0;
+    color: #ddd; /* Light text color */
+}
+
+.footer h5 {
+    color: #f39c12; /* Gold color for heading */
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #bbb; /* Slightly lighter color for text */
+    transition: color 0.3s;
+}
+
+.footer a {
+    font-size: 1rem;
+    color: #fff; /* White color for links */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and text-decoration */
+}
+
+.footer a:hover {
+    color: #f39c12; /* Gold color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #bbb; /* Light color for icons */
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #f39c12; /* Gold color on hover */
+}
+
+/* Footer Links */
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+/* Hover effect for Quick Links and Resources */
+.footer .list-unstyled li a:hover {
+    color: #f39c12; /* Gold color on hover */
+    text-decoration: underline; /* Optional: underline text on hover */
+}
+
+/* Copyright */
+.footer .text-center p {
+    color: #bbb; /* Lighter color for copyright text */
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .features-section i {
+        padding: 10px;
+    }
+}
+/* Task List Styling */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid #444; /* Darker border to match theme */
+    background-color: #333333; /* Dark background for each task item */
+    color: #ddd; /* Light text color */
+}
+
+/* Task Text */
+.task-text {
+    flex: 2;
+    color: #fff; /* White for task text */
+}
+
+/* Task Date/Time */
+.task-time {
+    flex: 1;
+    text-align: center;
+    color: #bbb; /* Light gray for date/time */
+}
+
+/* Task Status */
+.task-status {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Action Buttons */
+.task-actions {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Tick and Cross Buttons */
+.delete-btn,
+.status-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    transition: 0.2s ease-in-out;
+    margin: 5px;
+}
+
+/* Tick Button */
+.tick-btn {
+    color: green;
+}
+
+.tick-btn:hover {
+    background-color: rgba(0, 128, 0, 0.2); /* Light green background */
+    transform: scale(1.1);
+}
+
+/* Cross Button */
+.cross-btn {
+    color: red;
+}
+
+.cross-btn:hover {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red background */
+    transform: scale(1.1);
+}
+
+/* Delete Button */
+.delete-btn {
+    color: #ff4500;
+    background-color: transparent; /* Transparent background */
+}
+
+.delete-btn:hover {
+    color: #ffffff; /* White icon on hover */
+    background-color: #ff4500; /* Solid orange background */
+    transform: scale(1.1);
+}
+
+/* Task Status: Pending and Completed styles */
+.pending {
+    color: #f39c12; /* Gold for pending tasks */
+}
+
+.completed {
+    color: #2ecc71; /* Green for completed tasks */
+}
+
+/* Custom Background */
+.custom-bg {
+    background-color: #414040; /* Lighter grey */
+}
+
+/* Input Styling */
+/* Input Styling */
+.input-group input {
+    background-color: #555; /* Dark background for input fields */
+    color: #fff; /* White text */
+    border: 1px solid #666; /* Light border for inputs */
+}
+
+.input-group input::placeholder {
+    color: #ddd; /* Light gray color for placeholders */
+    text-transform: capitalize; /* Capitalize the placeholder text */
+}
+
+/* Specific styles for the task input and date input */
+#taskInput::placeholder, 
+#taskDateTime::placeholder {
+    color: #ddd; /* Same color for both task and date input placeholders */
+    text-transform: capitalize; /* Ensure placeholders are capitalized */
+}
+
+
+.input-group button {
+    background-color: #f39c12; /* Gold button for adding tasks */
+    color: #111; /* Dark text on button */
+    border: none;
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    background-color: #e67e22; /* Darker gold on hover */
+}
+
+/* Task List Container */
+.todo-container {
+    background-color: #222; /* Dark background for task container */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add subtle shadow for better depth */
+}
+
+/* Section Title */
+.todo-section{
+    color: #f39c12; /* Gold color for section title */
+    background: #333333;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.list-group-item:hover {
+    background-color: #444; /* Slightly lighter dark background on hover */
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #333333; /* Dark background */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.intro-section .section-title {
+    color: #f39c12; /* Gold for title */
+}
+
+.intro-section p {
+    color: #bbb; /* Light gray for description text */
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    background-color: #222; /* Dark background */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+}
+
+.how-it-works-section .section-title {
+    color: #f39c12; /* Gold for section title */
+}
+
+.how-it-works-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.how-it-works-section i {
+    color: #f39c12; /* Gold for icons */
+    background: #333333; /* Dark background for icons */
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 2.5rem; /* Larger icons */
+}
+
+.how-it-works-section h4 {
+    color: #fff; /* White for headings */
+}
+
+/* User Benefits Section */
+.benefits-section {
+    background-color: #333333; /* Dark background */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+}
+
+.benefits-section .section-title {
+    color: #f39c12; /* Gold for section title */
+}
+
+.benefits-section i {
+    color: #f39c12; /* Gold for icons */
+    background: #333333; /* Dark background for icons */
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.benefits-section h4 {
+    color: #fff; /* White for heading */
+}
+
+.benefits-section p {
+    color: #bbb; /* Light gray for description text */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #222; /* Darker background */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+}
+
+.testimonials-section .section-title {
+    color: #f39c12; /* Gold for title */
+}
+
+.testimonials-section blockquote {
+    border-left: 5px solid #f39c12; /* Gold border for blockquote */
+    padding-left: 15px;
+    font-style: italic;
+    color: #ddd; /* Light color for blockquote text */
+}
+
+.testimonials-section .blockquote-footer {
+    color: #bbb; /* Light gray for footer text */
+}
+
+/* Vision & Future Section */
+.vision-section {
+    background-color: #333333; /* Dark background */
+    color: #ddd; /* Light text */
+    padding: 60px 0;
+}
+
+.vision-section .section-title {
+    color: #f39c12; /* Gold for title */
+}
+
+.vision-section p {
+    color: #bbb; /* Light gray for description text */
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #333333; /* Dark gray background */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #ffffff; /* White text color for better contrast */
+}
+
+/* Accordion Button (Question) */
+.accordion-button {
+    background-color: #444444; /* Dark gray background for each FAQ question */
+    color: #f39c12; /* Golden text color for questions */
+    border: 1px solid #555; /* Slightly darker border */
+    border-radius: 0.25rem;
+    font-weight: bold; /* Make question bold */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Remove default blue outline */
+    border-color: #555; /* Keep the border color consistent */
+}
+
+/* Accordion Button on Hover */
+.accordion-button:hover {
+    background-color: #555555; /* Slightly lighter background on hover */
+    border-color: #666; /* Lighter border on hover */
+    color:#f39c12; /* Keep golden text color on hover */
+}
+
+/* When the accordion button is expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #666666; /* Slightly lighter background when expanded */
+    border-color: #777; /* Lighter border when expanded */
+    color: #f39c12; /* Keep golden text color when expanded */
+}
+
+/* Accordion Body (Answer) */
+.accordion-body {
+    background-color: #444444; /* Darker gray background for the content */
+    color: #dcd9d9; /* White text color for readability */
+    border-top: 1px solid #555; /* Slightly darker border between header and body */
+    padding: 1rem; /* Padding inside body */
+}
+
+/* Accordion Icon */
+.accordion-button::after {
+    color:#f39c12; /* Golden color for the icon */
+}
+
+/* Optional: Rounded top corners for the first item */
+.accordion-item:first-child .accordion-button {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+/* Optional: Rounded bottom corners for the last item */
+.accordion-item:last-child .accordion-button {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+
+
+/* Terms and Privacy Section */
+.terms-privacy-section {
+    background-color: #333333; /* Dark background */
+    color: #ddd; /* Light text */
+    padding: 60px 20px;
+}
+
+.terms-privacy-section h1,
+.terms-privacy-section h3 {
+    color: #ffffff; /* White color for headers */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph text */
+.terms-privacy-section p {
+    font-size: 1.1rem;
+    color: #bbb; /* Slightly lighter color for paragraphs */
+}
+
+/* Terms and Privacy Content */
+.terms-privacy-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.terms-privacy-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #bbb; /* Light color for list items */
+}
+
+.terms-privacy-section ul li::before {
+    content: "•"; /* Bullet style */
+    color: #f39c12; /* Gold bullet */
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Highlight for Sections */
+.terms-privacy-section h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #f39c12; /* Gold color for sub-headings */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms-privacy-section h1 {
+        font-size: 2.5rem;
+    }
+    .terms-privacy-section h3 {
+        font-size: 1.5rem;
+    }
+}
