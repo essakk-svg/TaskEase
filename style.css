@@ -56,6 +56,8 @@ body {
     text-decoration: none;
 }
 
+
+
 .hero-section .btn:hover {
     background-color: #e67e22; /* Darker gold on hover */
     border-color: #e67e22;
@@ -519,42 +521,44 @@ body {
     background-color: #333333; /* Dark gray background */
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #ffffff; /* White text color for better contrast */
+}
+.accordion-item {
+    margin-bottom: 0; /* Remove spacing between items */
+    border: 1.5px solid #ff9d00;     /* Remove any default borders */
 }
 
 /* Accordion Button (Question) */
 .accordion-button {
     background-color: #444444; /* Dark gray background for each FAQ question */
-    color: #f39c12; /* Golden text color for questions */
-    border: 1px solid #555; /* Slightly darker border */
-    border-radius: 0.25rem;
+    color: #f39c12; /* Golden text color for questions */ /* Slightly darker border */
+    
     font-weight: bold; /* Make question bold */
 }
 
 .accordion-button:focus {
     box-shadow: none; /* Remove default blue outline */
-    border-color: #555; /* Keep the border color consistent */
+    /* Keep the border color consistent */
 }
 
 /* Accordion Button on Hover */
 .accordion-button:hover {
     background-color: #555555; /* Slightly lighter background on hover */
-    border-color: #666; /* Lighter border on hover */
+     /* Lighter border on hover */
     color:#f39c12; /* Keep golden text color on hover */
 }
 
 /* When the accordion button is expanded */
 .accordion-button:not(.collapsed) {
-    background-color: #666666; /* Slightly lighter background when expanded */
-    border-color: #777; /* Lighter border when expanded */
+    background-color:#444444; /* Slightly lighter background when expanded */
+     /* Lighter border when expanded */
     color: #f39c12; /* Keep golden text color when expanded */
 }
 
 /* Accordion Body (Answer) */
 .accordion-body {
-    background-color: #444444; /* Darker gray background for the content */
+    background-color:  #666666 ; /* Darker gray background for the content */
     color: #dcd9d9; /* White text color for readability */
-    border-top: 1px solid #555; /* Slightly darker border between header and body */
+    border-top: 1.5px solid #f39c12; /* Slightly darker border between header and body */
     padding: 1rem; /* Padding inside body */
 }
 
